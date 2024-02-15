@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        ArrayList<String> colors = new ArrayList<>(Arrays.asList("1-vermelho", "2-azul", "3-verde") );
-        Game game = Game.getInstance(colors);
+
+        Game game = Game.getInstance();
 
         showMessage("Bem-vindo ao WAR!");
 

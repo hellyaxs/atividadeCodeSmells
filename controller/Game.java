@@ -1,17 +1,18 @@
 package controller;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Game {
     private static Game instance;
-    private ArrayList<String>  availableColors;
+    private final ArrayList<String> availableColors = new ArrayList<>(Arrays.asList("1-vermelho", "2-azul", "3-verde") );
 
-    protected Game(ArrayList<String> colors) {
-        this.availableColors = colors;
+    protected Game() {
+
     }
 
-    public static synchronized Game getInstance(ArrayList<String> colors) {
+    public static synchronized Game getInstance() {
         if (instance == null) {
-            instance = new Game(colors);
+            instance = new Game();
         }
         return instance;
     }
