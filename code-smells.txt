@@ -1,4 +1,7 @@
 code smells do projeto 11
 
-- codigo duplicado
+- Codigo duplicado
 - Lazy class
+- Objetos mutaveis
+- Dead code
+- Single Responsibility
