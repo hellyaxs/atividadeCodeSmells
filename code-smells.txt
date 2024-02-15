@@ -1,0 +1,4 @@
+code smells do projeto 11
+
+- codigo duplicado
+- Lazy class
